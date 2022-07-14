@@ -1,6 +1,6 @@
 ---
 title: 'Machine Learning - Learning Lab 1 Independent Practice'
-author: ""
+author: "Tracy Arner"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output: html_document
 ---
@@ -25,21 +25,21 @@ Part A:
 
 1.  How good was the machine learning model we developed in the guiding practice? Would you be comfortable using it to code more conversations? What if you read about someone using such a model as a reviewer of research? Please add your thoughts and reflections following the bullet point below.
 
--   
+-   The model showed 85% accuracy which is pretty accurate depending on your data and the field. One comparison is to human coding and interrater reliability. When looking at text constructed responses that are human coded based on a rubric, 85% reliability would be considered high enough. So, the model is roughly equivalent to the accuracy of humans. 
 
 2.  How might the model be improved? Share any ideas you have at this time below:
 
--   
+-   The model might be improved by adding the text of the tweets. . .maybe. . .I think that this would require some additional text mining analyses to look for text patterns or key terms that would more clearly specify the model. Perhaps developing a data dictionary of tweets related to the standards by distilling the actual text of the standards. 
 
 Part B: Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.edu/#articles)), [Google Scholar](https://scholar.google.com/) or search engine to locate a research article, presentation, or resource that applies machine learning to an educational context aligned with your research interests. More specifically, **locate a machine learning study that involve making predictions**.
 
 1.  Provide an APA citation for your selected study.
 
-    -   
+    -   Reilly, J. M., & Schneider, B. (2019). Predicting the Quality of Collaborative Problem Solving through Linguistic Analysis of Discourse. International Educational Data Mining Society.
 
 2.  What research questions were the authors of this study trying to address and why did they consider these questions important?
 
-    -   
+    -   The authors were trying to determine if the quality of collaboration between workers in a shared space could be predicted using 35 Coh-Metrix indices from coded discourse between dyads. The indices were used as
 
 3.  What were the results of these analyses?
 
@@ -70,19 +70,20 @@ final_fit$.predictions[[1]] %>%
 
 Please interpret the above confusion matrix using [these guidelines](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62) in terms of the true positive, true negative, false positive, and false negative rates. After each of the following (i.e., "True positive"), add both the *number* and percentage of observations. For instance, if there were 100 true positives out of a total of 400 data points, please write: 100 (25%).
 
-**True positive**:
+**True positive**:  260
 
-**True negative**:
+**True negative**: 402
 
-**False positive**:
+**False positive**: 60
 
-**False negative**:
+**False negative**: 37
 
 You can read more about interpreting these [here](https://bradleyboehmke.github.io/HOML/process.html#classification-models) in terms of the specificity, sensitivity, precision, and recall, four statistics based on the information in the confusion matrix.
 
 Return to your answer for Part 1A. Now, having examined the true and false positive and negative rates, how good do you think machine learning model we developed in the case study was? Write more specifically using the evidence you have from creating and interpreting the confusion matrix (above) after the following bullet point.
 
--   
+-   The values for the true positive and negative are considerably higher than the false values which would suggest that the model was relatively good at selecting the correct code for tweets based on the training model. 
+
 
 ### Knit & Submit
 
