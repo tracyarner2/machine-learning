@@ -39,11 +39,10 @@ Part B: Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.
 
 2.  What research questions were the authors of this study trying to address and why did they consider these questions important?
 
-    -   The authors were trying to determine if the quality of collaboration between workers in a shared space could be predicted using 35 Coh-Metrix indices from coded discourse between dyads. The indices were used as
-
+    -   The authors were trying to determine if the quality of collaboration between workers in a shared space could be predicted using 35 Coh-Metrix indices from coded discourse between dyads. Specific research question: Can Coh-Metrix indices be used to train supervised machine learning algorithms to predict collaboration quality? 
 3.  What were the results of these analyses?
 
-    -   
+    -   The authors found that the Random Forest Classifier was the most accurate when compared with Naive Bayes and SVM. The authors then ranked the linguistic indices that were most important in determining quality of collaboration and they found that second person pronoun incidence and lexical diversity were the most important indices while word count, sentence count, negation expression incidence, teat easibility, and verb phrase density also rate highly. Overall, the dyads who collaborated the best had more words uttered and had greater lexical and verb diversity, i.e., more action words. 
 
 ### Part II: Data Product
 

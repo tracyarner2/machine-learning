@@ -99,7 +99,7 @@ Note its dimensions --- especially how many rows it has. Add a few
 dashes after the chunk with your observations.
 
 ```{r}
-
+glimpse(d)
 ```
 
 *Observations*:
@@ -159,9 +159,10 @@ created a training and testing data set called `training()` and
 Run the following code to split the data:
 
 ```{r}
-set.seed(20220712)
+set.seed(20220714)
 train_test_split <- initial_split(d, prop = .80)
 data_train <- training(train_test_split)
+data_test <- testing(train_test_split)
 ```
 
 Go ahead and type `data_train` and `d` into the console (in steps) to
@@ -273,6 +274,7 @@ Type `final_fit` below; this is the final, fitted model---one that can
 be interpreted further in the next step!
 
 ```{r}
+final_fit
 ```
 
 You may see a message/warning above or when you examine `final_fit`; you
